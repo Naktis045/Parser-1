@@ -1,3 +1,4 @@
+
 import asyncio
 from telethon.sync import TelegramClient, events
 from pars_conf import account, list_all, key_words # импортируем данные из файла конфигурации
@@ -44,6 +45,7 @@ async def my_event_handler(event,delay=86400):
 
 
 def shaya():
+    """  """
     client.start()
     client.run_until_disconnected()
 
