@@ -47,5 +47,7 @@ async def process_image_and_send_text():
 
 
 if __name__ == '__main__':
- process_image_and_send_text()
+    while True:
+        if os.path.exists('photo.jpg'):
+            process_image_and_send_text()
   
